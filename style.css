@@ -124,7 +124,9 @@ div#benefics {
     justify-content: space-evenly;
 }
 
-div#d1, div#d2, div#d3 {
+div#d1,
+div#d2,
+div#d3 {
     max-width: 250px;
 }
 
@@ -132,12 +134,12 @@ div#benefics img {
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    margin:  50px 0px 10px 0px;
+    margin: 50px 0px 10px 0px;
 }
 
 section#local {
-    background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)), 
-    url(img/hrz-1.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)),
+        url(img/hrz-1.jpg);
     background-position: center;
     height: 35vh;
     margin-top: 50px;
@@ -218,8 +220,8 @@ div#p1 h3 {
 }
 
 section#inscription {
-    background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)), 
-    url(img/hrz-6.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)),
+        url(img/hrz-6.jpg);
     background-position: center;
     background-size: cover;
     height: 30vh;
