@@ -1,0 +1,274 @@
+:root {
+    --primary: #eb1ccc;
+    --second: #bdc1c5;
+    --text-color: #fff;
+    --text-secondary: #000;
+    --text-terciary: #5d5d5d;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--second);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 20px;
+    border: 3px solid var(--second);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'montserrat';
+    box-sizing: border-box;
+}
+
+
+header#event {
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.8)), url(img/hrz-5.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+
+h1,
+p#date {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+p#chamative {
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+div#form {
+    background-color: var(--second);
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+div#form p {
+    font-size: 1.4em;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+}
+
+div#form-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+div#form-inputs label {
+    color: var(--text-terciary);
+    font-weight: bold;
+    margin-bottom: .3em;
+}
+
+div#form-inputs input,
+select {
+    border-radius: 3px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    height: 2.5em;
+    margin-bottom: 1em;
+}
+
+button#btn {
+    height: 3em;
+    background-color: var(--primary);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: .8;
+}
+
+button#btn:hover {
+    opacity: 1;
+}
+
+section#benefics {
+    text-align: center;
+}
+
+section#benefics h2 {
+    font-size: 2em;
+    background-color: var(--second);
+    padding: 1.6em;
+    text-transform: uppercase;
+}
+
+div#benefics {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div#d1, div#d2, div#d3 {
+    max-width: 250px;
+}
+
+div#benefics img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin:  50px 0px 10px 0px;
+}
+
+section#local {
+    background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)), 
+    url(img/hrz-1.jpg);
+    background-position: center;
+    height: 35vh;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+}
+
+div#local {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+div#local i {
+    font-size: 4em;
+    margin-right: 20px;
+    color: var(--primary);
+}
+
+div#local-destaque {
+    max-width: 600px;
+}
+
+div#local-destaque h2 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+section#photos {
+    width: 80%;
+    margin: 50px auto;
+}
+
+section#photos div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 4em;
+}
+
+section#photos img {
+    width: 50%;
+}
+
+div#p1 div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+
+div#p1 ul {
+    list-style-position: inside;
+    margin-top: 2em;
+}
+
+div#p1 ul li {
+    margin-bottom: 1em;
+}
+
+div#p1 ul li:last-child {
+    font-weight: bold;
+}
+
+div#p1 h2 {
+    font-size: 3em;
+}
+
+div#p1 h3 {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+section#inscription {
+    background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)), 
+    url(img/hrz-6.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+section#inscription h3 {
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+section#inscription button {
+    width: 30%;
+    height: 20%;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    background-color: var(--primary);
+    cursor: pointer;
+    opacity: .8;
+}
+
+section#inscription button:hover {
+    opacity: 1;
+}
+
+footer#contact {
+    height: 20vh;
+    background-color: var(--second);
+    color: var(--text-terciary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer#contact h4 {
+    font-size: 2em;
+}
+
+footer#contact p#evol {
+    margin: 1.5em;
+}
+
+footer#contact span {
+    font-weight: bold;
+}
